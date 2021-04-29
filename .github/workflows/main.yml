@@ -28,7 +28,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get install python3-stdeb
-          pip3 install nvpy
+          pip3 install nvpy tkinter
 
       - name: Deb Build
         run: python setup.py --command-packages=stdeb.command bdist_deb
