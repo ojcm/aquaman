@@ -26,7 +26,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install build dependencies
-        run: sudo apt-get install python3-stdeb
+        run: |
+          sudo apt-get install python3-stdeb bdist_deb
+          pip3 install nvpy
 
       - name: Deb Build
         run: python setup.py --command-packages=stdeb.command bdist_deb
