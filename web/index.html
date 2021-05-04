@@ -1,0 +1,29 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+	<style>
+		body { background: #f5f5f5; }
+	</style>
+{% endblock %}
+
+
+{% block title %}
+Sensor Identifiers
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="pb-2 mt-4 mb-2">Sensor Identifiers</div>
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+      {{ wtf.quick_form(form) }}
+      <code>{{ json }}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
