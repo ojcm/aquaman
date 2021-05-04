@@ -30,6 +30,7 @@ jobs:
           sudo apt-get install python3-stdeb
           pip3 install nvpy tk
 
-      - name: Deb Build
-        run: python3 setup.py --command-packages=stdeb.command bdist_deb
+      # TODO: fix deb build
+      # - name: Deb Build
+      #   run: python3 setup.py --command-packages=stdeb.command bdist_deb
         
