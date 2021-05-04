@@ -2,11 +2,10 @@
 
 from werkzeug.datastructures import MultiDict
 from absl import app, flags, logging
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
 import json
 
 FLAGS = flags.FLAGS
